@@ -1,6 +1,6 @@
 # NavigationIOSExample
 
-# To navigate to another screen:
+# Navigate to another screen:
 ```swift
 @IBAction func onButtonClick(_ sender: UIButton) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -11,7 +11,7 @@
 }
 ```
 
-# Do update when navigation back
+# Do update when go back
 ```swift
  override func viewDidDisappear(_ animated: Bool) {
         if (mosterProtocol != nil) {

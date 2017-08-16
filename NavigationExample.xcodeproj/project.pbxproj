@@ -14,6 +14,8 @@
 		158AF1041F443BE700A06254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158AF1021F443BE700A06254 /* LaunchScreen.storyboard */; };
 		158AF10F1F443BE700A06254 /* NavigationExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158AF10E1F443BE700A06254 /* NavigationExampleTests.swift */; };
 		158AF11A1F443BE700A06254 /* NavigationExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158AF1191F443BE700A06254 /* NavigationExampleUITests.swift */; };
+		158AF12B1F443D1C00A06254 /* MosterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158AF12A1F443D1C00A06254 /* MosterController.swift */; };
+		158AF12E1F4446E000A06254 /* OnMosterChangeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158AF12D1F4446E000A06254 /* OnMosterChangeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		158AF1151F443BE700A06254 /* NavigationExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		158AF1191F443BE700A06254 /* NavigationExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExampleUITests.swift; sourceTree = "<group>"; };
 		158AF11B1F443BE700A06254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		158AF12A1F443D1C00A06254 /* MosterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosterController.swift; sourceTree = "<group>"; };
+		158AF12D1F4446E000A06254 /* OnMosterChangeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnMosterChangeProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,9 @@
 		158AF0F81F443BE700A06254 /* NavigationExample */ = {
 			isa = PBXGroup;
 			children = (
+				158AF12C1F44469A00A06254 /* Callback */,
+				158AF1271F443C5C00A06254 /* View */,
 				158AF0F91F443BE700A06254 /* AppDelegate.swift */,
-				158AF0FB1F443BE700A06254 /* ViewController.swift */,
 				158AF0FD1F443BE700A06254 /* Main.storyboard */,
 				158AF1001F443BE700A06254 /* Assets.xcassets */,
 				158AF1021F443BE700A06254 /* LaunchScreen.storyboard */,
@@ -123,6 +128,23 @@
 				158AF11B1F443BE700A06254 /* Info.plist */,
 			);
 			path = NavigationExampleUITests;
+			sourceTree = "<group>";
+		};
+		158AF1271F443C5C00A06254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				158AF0FB1F443BE700A06254 /* ViewController.swift */,
+				158AF12A1F443D1C00A06254 /* MosterController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		158AF12C1F44469A00A06254 /* Callback */ = {
+			isa = PBXGroup;
+			children = (
+				158AF12D1F4446E000A06254 /* OnMosterChangeProtocol.swift */,
+			);
+			path = Callback;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158AF12B1F443D1C00A06254 /* MosterController.swift in Sources */,
 				158AF0FC1F443BE700A06254 /* ViewController.swift in Sources */,
+				158AF12E1F4446E000A06254 /* OnMosterChangeProtocol.swift in Sources */,
 				158AF0FA1F443BE700A06254 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
